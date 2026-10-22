@@ -1,0 +1,36 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --charcoal: #20201e;
+  --ink: #171715;
+  --cream: #f7f3eb;
+  --gold: #f4c542;
+  --terracotta: #c65d36;
+}
+html {
+  scroll-behavior: smooth;
+  background: var(--ink);
+}
+body {
+  background: var(--cream);
+}
+section[id] {
+  scroll-margin-top: 72px;
+}
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
