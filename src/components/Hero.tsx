@@ -54,10 +54,10 @@ export function Hero() {
       <HeroScene reducedMotion={reduced} />
 
       <motion.div
-        className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6 pb-[24vh] pt-24 md:px-10 md:pb-[20vh]"
+        className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6 pb-[24vh] pt-32 md:px-10 md:pb-[20vh]"
         style={{ y: contentY, opacity: contentOpacity }}>
         
-        <h1 className="max-w-4xl font-serif text-[clamp(3rem,8vw,7.5rem)] font-medium leading-[0.92] tracking-[-0.01em] text-cream">
+        <h1 className="max-w-4xl font-serif text-[clamp(2.5rem,6vw,5.5rem)] font-medium leading-[0.95] tracking-[-0.01em] text-cream">
           <motion.span
             className="block"
             initial={{ opacity: 0, y: 32 }}
@@ -67,7 +67,7 @@ export function Hero() {
             Email Marketing
           </motion.span>
           <motion.span
-            className="block italic text-gold"
+            className="block italic text-[#D97706]"
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.27, ease: easeOut }}>

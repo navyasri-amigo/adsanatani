@@ -7,15 +7,20 @@ type LogoProps = {
 
 export function Logo({ className = '' }: LogoProps) {
   return (
-    <span className={`inline-flex items-center ${className}`}>
+    <span
+      className={`inline-flex items-center ${className}`}
+      style={{
+        transform: 'translateY(-20px)',
+      }}
+    >
       <img
-        src="/logo11.png"
+        src="/logo22.png"
         alt="AdSanatani"
         style={{
-          width: '260px',
-          height: '110px',
-          maxWidth: 'none',
-          objectFit: 'fill',
+          width: '220px',
+          height: 'auto',
+          maxWidth: '100%',
+          objectFit: 'contain',
           display: 'block',
         }}
       />
